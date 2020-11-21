@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product, vendor/xiaomi/msm8937-common/msm8937-common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/msm8953-common/msm8953-common-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -88,7 +88,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@5.0-impl \
     android.hardware.soundtrigger@2.2-impl \
     audio.a2dp.default \
-    audio.primary.msm8937 \
+    audio.primary.msm8953 \
     audio.r_submix.default \
     audio.usb.default \
     libaudioroute \
@@ -141,7 +141,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0 \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
-    camera.msm8937 \
+    camera.msm8953 \
     libmm-qcamera \
     Snap
 
@@ -158,10 +158,10 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    copybit.msm8937 \
-    gralloc.msm8937 \
-    hwcomposer.msm8937 \
-    memtrack.msm8937 \
+    copybit.msm8953 \
+    gralloc.msm8953 \
+    hwcomposer.msm8953 \
+    memtrack.msm8953 \
     libdisplayconfig \
     liboverlay \
     libqdMetaData.system \
@@ -247,7 +247,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
     android.hardware.light@2.0-service \
-    lights.msm8937
+    lights.msm8953
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -255,7 +255,7 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/configs/media/media_codecs_8937_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_8937_v1.xml \
+        $(LOCAL_PATH)/configs/media/media_codecs_8953_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_8953_v1.xml \
         $(LOCAL_PATH)/configs/media/media_codecs_8956.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_8956.xml \
         $(LOCAL_PATH)/configs/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
         $(LOCAL_PATH)/configs/media/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
@@ -300,7 +300,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # Properties
--include device/xiaomi/msm8937-common/prop.mk
+-include device/xiaomi/msm8953-common/prop.mk
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -388,7 +388,7 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    thermal.msm8937
+    thermal.msm8953
 
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
@@ -407,7 +407,7 @@ PRODUCT_COPY_FILES += \
 
 # VR
 PRODUCT_PACKAGES += \
-    vr.msm8937
+    vr.msm8953
 
 PRODUCT_PACKAGES += \
     android.hardware.vr@1.0-impl \
