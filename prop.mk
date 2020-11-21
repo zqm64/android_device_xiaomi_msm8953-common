@@ -216,7 +216,7 @@ persist.vendor.usb.config.extra=none
 
 # Voltage
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.cutoff_voltage_mv=3200
+ro.cutoff_voltage_mv=3400
 
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
